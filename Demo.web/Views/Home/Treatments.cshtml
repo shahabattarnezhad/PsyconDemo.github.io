@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Treatments";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Treatments</h1>
+            <br />
+            <p class="lead">
+                All of your treatments are listed below,
+                click on specify row to show full details.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped table-bordered">
+            <thead class="table-secondary">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Doctor's Name</th>
+                    <th scope="col">Description</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dr. Farahani</td>
+                    <td>some texts as description.</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="TreatmentDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dr. Smith</td>
+                    <td>some texts as description.</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="TreatmentDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dr. Farahani</td>
+                    <td>some texts as description.</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="TreatmentDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dr. Smith</td>
+                    <td>some texts as description.</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="TreatmentDetails">Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <a asp-action="Profile" class="btn btn-block btn-primary">Back To Medical Records</a>
+    </div>
+</div>
+

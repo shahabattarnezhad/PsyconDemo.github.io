@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Demo.web.Areas.Identity.Data
+@inject UserManager<ApplicationUser> UserManager
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, @UserManager.GetUserName(User)!</h1>
+        <p class="lead">
+            Please note, before every activity, it necessary to give a test.
+        </p>
+        <hr class="my-4">
+        <p>
+            The test helps the consultant or doctor to have a clear profile about your mental care.
+            <br />
+            It is completely free!
+        </p>
+        <a class="btn btn-primary btn-lg" asp-action="PsyTest" role="button">Give a Test Today!</a>
+    </div>
+</div>

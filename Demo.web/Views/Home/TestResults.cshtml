@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "TestResults";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Test Results</h1>
+            <br />
+            <p class="lead">
+                All of your test results are listed below,
+                click on specify row to show full details.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped table-bordered">
+            <thead class="table-secondary">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Test Date</th>
+                    <th scope="col">Description</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>11 Oct.</td>
+                    <td>some texts as description</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="TestResultDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>12 Oct.</td>
+                    <td>some texts as description</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="TestResultDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>16 Oct.</td>
+                    <td>some texts as description</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="TestResultDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>18 Oct.</td>
+                    <td>some texts as description</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="TestResultDetails">Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <a asp-action="Profile" class="btn btn-block btn-primary">Back To Medical Records</a>
+    </div>
+</div>
+

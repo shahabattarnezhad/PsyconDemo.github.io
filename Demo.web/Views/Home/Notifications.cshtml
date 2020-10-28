@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewData["Title"] = "Notifications";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Notifications</h1>
+            <br />
+            <p class="lead">
+                All of your notifications are listed below,
+                click on specify row to show full details.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped table-bordered">
+            <thead class="table-secondary">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Sender Name</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Message</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dr. Farahani</td>
+                    <td>Report of the test at Monday Oct. 11th. </td>
+                    <td>some texts as report...</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="NotificationDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dr. Smith</td>
+                    <td>Report of the test at Friday Oct. 14th. </td>
+                    <td>some texts as report...</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="NotificationDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Admin</td>
+                    <td>Please check your e-mail</td>
+                    <td>some texts as report...</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="NotificationDetails">Details</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dr. Farahani</td>
+                    <td>Report of the test at Tuesday Oct. 19th. </td>
+                    <td>some texts as report...</td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="NotificationDetails">Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <a asp-action="Profile" class="btn btn-block btn-primary">Back To Medical Records</a>
+    </div>
+</div>
+

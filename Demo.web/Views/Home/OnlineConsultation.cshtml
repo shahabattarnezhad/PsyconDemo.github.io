@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "OnlineConsultation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Make an Appointment!</h1>
+            <br/>
+            <p class="lead">
+                In the calendar below, you can see the consultant's free hours, select one of the clocks and press the green button and wait for the consultant to confirm the desired time.
+            </p>
+        </div>
+    </div>
+    
+    <div id='calendar'></div>
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <a class="btn btn-block btn-success" onclick="sweetAlertClick()">Set the selected time</a>
+        </div>
+        <div class="col-md-6">
+            <a asp-action="UserPage" class="btn btn-block btn-warning">Back to main page</a>
+        </div>
+    </div>
+</div>
+
+

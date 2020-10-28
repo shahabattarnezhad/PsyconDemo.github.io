@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-primary">Result of Your Test</h1>
+<hr/>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <img src="~/images/testResult.png" class="img-fluid" alt="result">
+        </div>
+        <div class="col-md-4">
+            <div class="alert alert-success p-4" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>
+                    Dear user, note that a copy of this test response has been sent to the doctor and she will send it
+                    to you after writing a brief report for this test.
+                </p>
+                <hr>
+                <p class="mb-0">You can check your profile to see the report.</p>
+                <a asp-action="Profile" class="btn btn-link">Go to profile</a>
+                |
+                <a asp-action="Reports" class="btn btn-link">Get The Report</a>
+                <a asp-action="UserPage" class="btn btn-link">Back to home</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+

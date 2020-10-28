@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "NotificationDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Details of Selected Row</h1>
+            <p class="lead">Full details of the selected row is accessable here.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail4">Sender's Name</label>
+                        <input type="text" disabled class="form-control" placeholder="Dr. Farahani" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputPassword4">Date</label>
+                        <input type="password" class="form-control" disabled placeholder="8th Oct. 2020" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputCity">Subject</label>
+                        <input type="text" disabled placeholder="subject..." class="form-control" id="inputCity">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputCity">Message</label>
+                        <textarea rows="8" type="text" placeholder="some texts as message" disabled class="form-control" id="inputCity"></textarea>
+                    </div>
+                </div>
+                <button asp-action="Profile" class="btn btn-warning">Back to Medical Records</button> |
+                <button asp-action="Notifications" class="btn btn-primary">Back to Notifications List</button>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "UserPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">User's Home Page</h1>
+            <br />
+            <p class="lead">Here you can find all of your settings pages</p>
+        </div>
+    </div>
+    <div class="row p-4">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="~/images/test.jpg" class="card-img-top" alt="Test">
+                <div class="card-body">
+                    <h5 class="card-title">Test</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a asp-action="PsyTest" class="btn btn-success">Give a New Test Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="~/images/doctors.jpg" class="card-img-top" alt="doctors">
+                <div class="card-body">
+                    <h5 class="card-title">Treatment</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a asp-action="Treatment" class="btn btn-primary">Make an appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="~/images/video.jpg" class="card-img-top" alt="Video">
+                <div class="card-body">
+                    <h5 class="card-title">Online consultation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a asp-action="OnlineConsultation" class="btn btn-primary">Make an appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row p-4">
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="~/images/consulting.jpg" class="card-img-top" alt="consulting">
+                <div class="card-body">
+                    <h5 class="card-title">In-person consultation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a asp-action="InPersonConsultation" class="btn btn-primary">Make an appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="~/images/medicalRecords.jpg" class="card-img-top" alt="medical records">
+                <div class="card-body">
+                    <h5 class="card-title">Medical Records</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a asp-action="Profile" class="btn btn-primary">View Your Medical Records</a>
+                </div>
+            </div>
+        </div>
+
+        @*<div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="~/images/medicalRecords.jpg" class="card-img-top" alt="medical records">
+                    <div class="card-body">
+                        <h5 class="card-title">Medical Records</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a asp-action="Profile" class="btn btn-primary">View Medical Records</a>
+                    </div>
+                </div>
+            </div>*@
+
+    </div>
+</div>
+

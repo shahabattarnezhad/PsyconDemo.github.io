@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Medical Records</h1>
+            <br />
+            <p class="lead">You can find all of your medical records here!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Documents</h5>
+                    <p class="card-text">All psychotherapy documentation are listed here</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a asp-action="appointments" id="app" class="card-link">Appointments</a></li>
+                    <li class="list-group-item"><a asp-action="Treatments" id="treat" class="card-link">Treatments</a></li>
+                    <li class="list-group-item"><a asp-action="TestResults" id="res" class="card-link">Test Results</a></li>
+                    <li class="list-group-item"><a asp-action="Reports" id="rep" class="card-link">Reports</a></li>
+                    <li class="list-group-item"><a asp-action="Followups" id="rep" class="card-link">Follow-Up</a></li>
+                    <li class="list-group-item"><a asp-action="Notifications" id="noti" class="card-link">Notifications</a></li>
+                </ul>
+                <div class="card-body">
+                    <a asp-action="UserPage" class="card-link">Home</a>
+                    <a asp-action="PsyTest" class="card-link">Make a New Test </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+           
+        </div>
+    </div>
+</div>
+

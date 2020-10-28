@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "TestResultDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Details of Selected Row</h1>
+            <p class="lead">Full details of the selected row is accessable here.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputEmail4">Date of Test</label>
+                        <input type="text" disabled class="form-control" placeholder="8th Oct. 2020" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputCity">Description</label>
+                        <textarea rows="8" type="text" disabled class="form-control" id="inputCity"></textarea>
+                    </div>
+                </div>
+                <button asp-action="Profile" class="btn btn-warning">Back to Medical Records</button> |
+                <button asp-action="TestResults" class="btn btn-primary">Back to Results List</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="~/images/testResult.png" style="width:100%"/>
+        </div>
+    </div>
+</div>
+

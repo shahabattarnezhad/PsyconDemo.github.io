@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewData["Title"] = "PsyTest";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-primary">Test</h1>
+<br />
+<hr />
+<br />
+
+<form class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom01">Code</label>
+            <input type="number" class="form-control" id="validationCustom01" value="Mark" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="John Smith" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="validationCustom03">Age</label>
+            <input type="number" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom04">Duration of hospitalization</label>
+            <select class="custom-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Outpatient</option>
+                <option>Less Than 1 week</option>
+                <option>1 ~ 4 week(s)</option>
+                <option>More than 4 weeks</option>
+                <option>Unknown</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        &nbsp;
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Gender</label>
+            <div class="row">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="validationCustom06">Female</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="sex" id="validationCustom05" required>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="validationCustom07">Male</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="sex" id="validationCustom05" required>
+            </div>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+    </div>
+    <button asp-action="StartTest" class="btn btn-success" type="submit">Start Testing!</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+

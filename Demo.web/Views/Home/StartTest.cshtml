@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "StartTest";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-primary">Question 1 out of 175</h1>
+<br />
+<hr />
+<br />
+
+<form class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <input class="form-control" type="text" placeholder="The question number 1...?" readonly>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">Yes</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">No</label>
+        </div>
+    </div>
+    <br />
+    <br />
+    <button asp-action="PsyTest" class="btn btn-warning" type="submit">Back To Form</button> | 
+    <button asp-action="StartTest1" class="btn btn-success" type="submit">Next</button>
+</form>
+

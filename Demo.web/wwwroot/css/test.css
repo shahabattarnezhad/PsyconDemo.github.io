@@ -1,0 +1,192 @@
+﻿html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form-content {
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+.step-wrapper {
+    width: 100%;
+    min-height: 300px;
+    max-width: 600px;
+    border-radius: 7px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid orange;
+}
+
+.questionnaire-item {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    padding: 24px;
+    border-radius: 7px;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+    .questionnaire-item.current-step {
+        opacity: 1;
+        z-index: 10;
+    }
+
+    .questionnaire-item.intro-step {
+        text-align: center;
+    }
+
+    .questionnaire-item.user-info {
+        display: grid;
+        gap: 12px;
+        grid-gap: 12px;
+        grid-template-columns: 1fr 1fr;
+    }
+/* .questionnaire-item.confirm-data.current-step {
+    z-index: 30;
+} */
+.intro-title,
+.intro-subtitle,
+.intro-text {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.form-field {
+    width: 100%;
+    height: 32px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 12px;
+}
+
+.form-item-eror {
+    color: red;
+    display: block;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.form-item.gender-field .gender-title {
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.form-field-label {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.question-text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.answer-choice {
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+}
+
+    .form-item .male-input,
+    .answer-choice label:first-child {
+        margin-right: 16px;
+    }
+
+.next-prev {
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    padding: 5px;
+    display: flex;
+    position: absolute;
+}
+
+.btn {
+    padding: 0;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    color: orange;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid orange;
+}
+
+    .btn:hover {
+        background-color: gainsboro;
+    }
+
+.next-prev-btn {
+    width: 25px;
+    height: 25px;
+}
+
+    .next-prev-btn::before {
+        content: '';
+        width: 30%;
+        height: 30%;
+        display: block;
+        border: solid orange;
+        border-width: 2px 2px 0 0;
+        transform: rotate(45deg);
+    }
+
+.next-step::before {
+    margin-right: 20%;
+    border-width: 2px 2px 0 0;
+}
+
+.prev-step::before {
+    margin-left: 20%;
+    border-width: 0 0 2px 2px;
+}
+
+.confirm-btn {
+    width: 80px;
+    height: 32px;
+}
+
+@media(max-width: 576px) {
+    .questionnaire-item {
+        padding: 12px;
+    }
+
+        .questionnaire-item.intro-step.current-step {
+            position: relative;
+            margin-bottom: 14px;
+        }
+
+    .form-item.gender-field > * {
+        margin: 0;
+        display: block;
+    }
+}

@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "FollowUpDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Details of Selected Row</h1>
+            <p class="lead">Full details of the selected row is accessable here.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Doctor's Name</label>
+                        <input type="text" disabled class="form-control" placeholder="Dr. Farahani" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Date of First Visit</label>
+                        <input type="password" class="form-control" disabled placeholder="8th Oct. 2020" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">Date of Prev Visit</label>
+                        <input type="text" class="form-control" id="inputAddress" disabled placeholder="1st Oct. 2020">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress2">Date of Next Visit</label>
+                        <input type="text" class="form-control" id="inputAddress2" disabled placeholder="Not set yet">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">Medicine Starts</label>
+                        <input type="text" class="form-control" id="inputAddress" disabled placeholder="1st Oct. 2020">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress2">Medicine Ends</label>
+                        <input type="text" class="form-control" id="inputAddress2" disabled placeholder="29th Oct. 2020">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputCity">Medicine Name</label>
+                        <textarea rows="8" type="text" disabled placeholder="medicine + 1, medicine + 2" class="form-control" id="inputCity"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputAddress">Date of First Test</label>
+                        <input type="text" class="form-control" id="inputAddress" disabled placeholder="1st Oct. 2020">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAddress2">Date of Prev Test</label>
+                        <input type="text" class="form-control" id="inputAddress2" disabled placeholder="29th Oct. 2020">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAddress2">Date of Next Test</label>
+                        <input type="text" class="form-control" id="inputAddress2" disabled placeholder="29th Oct. 2020">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputCity">Description</label>
+                        <textarea rows="8" type="text" disabled class="form-control" id="inputCity"></textarea>
+                    </div>
+                </div>
+                <button asp-action="Profile" class="btn btn-warning">Back to Medical Records</button> |
+                <button asp-action="FollowUps" class="btn btn-primary">Back to Follow-Ups List</button>
+            </form>
+        </div>
+    </div>
+</div>
+
